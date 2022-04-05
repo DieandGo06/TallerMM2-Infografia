@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /*cursor: url("../img/cursor.png"), auto;*/
+}
+
+* {
+  /* No permite que el texto o imagenes sean subrayados*/
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+html {
+  font-size: 1px !important;
+}
+
+body {
+  background-color: #e6fbe1;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 42rem;
+  margin-bottom: 5rem !important;
+  margin-top: 0rem;
+  line-height: 53rem;
+  overflow-y: hidden;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24rem;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28rem;
+  margin-bottom: 24rem;
+  margin-top: 0rem;
+}
+
+h5 {
+  font-size: 36rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+
+button {
+  border: none !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 28rem;
+  font-weight: bold;
+  background-color: #84c374;
+  border-radius: 20rem !important;
+  padding: 6rem 20rem;
+  box-shadow: 2rem 8rem 11rem 2rem rgb(0 0 0 / 10%);
+}
+
+button,
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+/*
+
+*/
+/* ----- Utilidades ----- */
+.item-verde {
+  background-color: #84c374 !important;
+}
+
+.item-rojo {
+  background-color: #dd6a57 !important;
+}
+
+.ocultar {
+  display: none !important;
+}
+
+.placeHolder {
+  opacity: 30%;
+}
+
+.underline {
+  text-decoration: underline black;
+}

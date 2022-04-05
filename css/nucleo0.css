@@ -1,0 +1,130 @@
+#nucleo0 {
+  background-image: url(../img/fondo_introduccion.png);
+  background-size: cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  cursor: url("../img/cursor.svg"), auto;
+}
+
+
+
+/*BOTON NUCLEO Y ACTIVA EL AUTO */
+
+#boton {
+  padding: 10rem;
+  background: orange;
+  width: 95rem;
+  cursor: pointer;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  box-shadow: 0rem 0rem 1rem #000;
+  display: inline-block;
+}
+
+#boton:hover {
+  opacity: 0.8;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(-250rem, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideOutLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-250rem, 0, 0);
+    visibility: hidden;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/*
+
+*/
+/* --- AUTO --- */
+.nucleo0__auto-estatico {
+  position: absolute;
+  left: -10%;
+  bottom: 100rem;
+  transform: translateX(-50%);
+
+  height: 140rem;
+}
+
+.nucleo0__auto img {
+  width: 100%;
+}
+
+.nucleo0__auto-animado {
+  animation: car 5s linear infinite;
+}
+
+@keyframes car {
+  100% {
+    transform: translateX(3600rem);
+  }
+}
+
+#nucleo0__boton {
+  cursor: pointer;
+}
+
+/*
+
+*/
+/*fin fondo y movimiento del auto*/
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: auto;
+  /* height: 400rem; */
+  margin-top: -200rem;
+  margin-left: -300rem;
+  margin-bottom: 0rem;
+  padding: 0rem;
+}
+/* CSS BARRA DE PROGRESO */
+
+.RadialProgress {
+  --hue: 137;
+  --holesize: 65%;
+  --track-bg: hsl(137 59% 73%);
+
+  inline-size: 50vmin;
+  min-inline-size: 100rem;
+  min-block-size: 100rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: max(10vmin, 1.4rem);
+}
+/*NUCLEO 3*/
+
+.fondo_3 {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_introduccion.png);
+  background-size: cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  position: relative;
+  /* overflow-x: hidden;*/
+}
